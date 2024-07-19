@@ -59,4 +59,6 @@ setInterval(function () {
         document.getElementById("disabled-buy-auto-clicker").style.display = 'none';
         document.getElementById("buy-auto-clicker").style.display = 'flex';
     }
+
+    document.getElementById("auto-clicker-cost").innerText = autoClickerCost;
 }, 1)
