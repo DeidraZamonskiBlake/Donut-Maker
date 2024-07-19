@@ -279,6 +279,7 @@ h1 {
 
 #menu-icon-container:hover {
     background-color:#fdd56e;
+    cursor: pointer;
 }
 
 @media only screen and (min-width: 900px) {
