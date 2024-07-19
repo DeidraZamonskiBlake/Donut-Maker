@@ -43,7 +43,7 @@ document.getElementById("buy-auto-clicker").onclick = function () {
     }
 
     let autoClickerCostIncrease = autoClickerCost * 0.1;
-    autoClickerCost += autoClickerCostIncrease;
+    autoClickerCost += parseInt(autoClickerCostIncrease);
 }
 
 setInterval(function () {
@@ -60,5 +60,5 @@ setInterval(function () {
         document.getElementById("buy-auto-clicker").style.display = 'flex';
     }
 
-    document.getElementById("auto-clicker-cost").innerText = autoClickerCost;
+    document.getElementById("auto-clicker-cost").innerText = parseInt(autoClickerCost) + " Donuts";
 }, 1)
