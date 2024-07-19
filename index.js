@@ -1,27 +1,6 @@
-const mobileMainBar = document.getElementById("mobile-main-bar");
-const sideBar = document.getElementById("sidebar");
 let numberOfDonuts = 0;
 let numberOfAutoClickers = 0;
 let autoClickerCost = 100;
-
-document.getElementById("menu-icon").onclick = function () {
-    sideBar.style.display = 'flex';
-}
-
-document.getElementById("sidebar-close").onclick = function () {
-    sideBar.style.display = 'none';
-    mobileMainBar.style.display = 'flex';
-}
-
-document.getElementById("cookie-clicker-main-link").onclick = function () {
-    const cookieClickerSection = document.getElementById("cookie-clicker");
-    cookieClickerSection.style.display = 'flex';
-}
-
-document.getElementById("cookie-clicker-close").onclick = function () {
-    const cookieClickerSection = document.getElementById("cookie-clicker");
-    cookieClickerSection.style.display = 'none';
-}
 
 document.getElementById("donut-maker-button").onclick = function () {
     numberOfDonuts = parseInt(numberOfDonuts) + 1;
