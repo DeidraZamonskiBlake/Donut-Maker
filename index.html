@@ -36,7 +36,7 @@
         <main>
           <section id="cookie-clicker">
             <div class="section-content">
-              <p><a class="close-icon"><svg xmlns="http://www.w3.org/2000/svg" height="21px" viewBox="0 -960 960 960" width="21px" fill="#000000"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></p>
+              <p><a id="cookie-clicker-close" class="close-icon"><svg xmlns="http://www.w3.org/2000/svg" height="21px" viewBox="0 -960 960 960" width="21px" fill="#000000"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></p>
               <p id="inspired-by">Inspired By</p>
               <p><h2 id="cookie-clicker-title">Cookie Clicker</h2></p>
               <p class="cookie-clicker-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum voluptates, ratione dolores magnam amet hic ducimus officia explicabo accusantium aspernatur iusto voluptatem ullam reiciendis. Rem, vitae nesciunt? Quia praesentium consectetur accusantium sunt voluptas! Blanditiis quia nesciunt doloribus commodi qui dicta repellendus! Distinctio porro maxime consequatur consequuntur, ipsa dolorem repellendus neque quod quia perspiciatis fugiat molestiae ducimus ratione dignissimos voluptates nisi. Facilis pariatur tenetur perspiciatis natus mollitia dolores, quam, unde ex officia sed libero laborum explicabo aperiam, quae voluptates doloremque amet odit suscipit laudantium. Aut delectus laudantium at reiciendis molestias perspiciatis cumque quidem quae modi explicabo. Nulla aspernatur ullam facere iste vel nam inventore sunt porro iure reprehenderit, totam minus, atque aperiam voluptatem commodi! Voluptates voluptatum sapiente magnam quis sequi, reiciendis, iusto nemo velit tenetur soluta non atque possimus sint commodi facilis! Tempore iusto quas esse omnis quibusdam atque quo laudantium quaerat odio exercitationem nesciunt reiciendis doloremque architecto, ratione tenetur voluptates!</p>
@@ -46,32 +46,43 @@
             </div>
           </section>
           <section id="donut-maker">
-            <h1>Donut Maker</h1>
-            <p>
-              <span><h3>Number of Donuts</h3></span>
-              <span><h3 id="number-of-donuts">0</h3></span>
-            </p>
-            <p>
-              <span><h3>Number of Auto-Clickers</h3></span>
-              <span><h3 id="number-of-auto-clickers">0</h3></span>
-            </p>
-            <p>
-              <span><h3>Auto-Clicker Cost</h3></span>
-              <span><h3 id="auto-clicker-cost">100 Donuts</h3></span>
-            </p>
-            <div class="button-container">
-              <button id="buy-auto-clicker">Purchase Auto-Clicker</button>
-              <button disabled id="disabled-buy-auto-clicker">Purchase Auto-Clicker</button>
+            <div id="title">
+              <h1>Donut Maker</h1>
             </div>
-            <div class="button-container">
-              <button id="donut-maker-button">Make Donut</button>
+            <div id="all-stats">
+              <div class="stats-container">
+                <p>
+                  <span><h3 class="stat">Number of Donuts</h3></span>
+                  <span><h3 id="number-of-donuts">0</h3></span>
+                </p>
+              </div>
+              <div class="stats-container">
+                <p class="flex-dir-column">
+                  <div><h3 class="stat">Number of Auto-Clickers</h3></div>
+                  <div><h3 id="number-of-auto-clickers">0</h3></div>
+                </p>
+              </div>
+              <div class="stats-container">
+                <p class="flex-dir-column">
+                  <span><h3 class="stat">Auto-Clicker Cost</h3></span>
+                  <span><h3 id="auto-clicker-cost">100 donuts</h3></span>
+                </p>
+              </div>
             </div>
-            <div class="button-container">
-              <button id="reset">Restart Donut Maker</button>
+            <div id="all-buttons">
+              <div class="button-container">
+                <button id="buy-auto-clicker">Purchase Auto-Clicker</button>
+                <button disabled id="disabled-buy-auto-clicker">Purchase Auto-Clicker</button>
+              </div>
+              <div class="button-container">
+                <button id="donut-maker-button">Make Donut</button>
+              </div>
+              <div class="button-container">
+                <button id="reset">Restart Donut Maker</button>
+              </div>
             </div>
           </section>
         </main>
-        <p></p>
       </div>
     </div>
     <script src="./index.js"></script>

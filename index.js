@@ -18,6 +18,11 @@ document.getElementById("cookie-clicker-main-link").onclick = function () {
     cookieClickerSection.style.display = 'flex';
 }
 
+document.getElementById("cookie-clicker-close").onclick = function () {
+    const cookieClickerSection = document.getElementById("cookie-clicker");
+    cookieClickerSection.style.display = 'none';
+}
+
 document.getElementById("donut-maker-button").onclick = function () {
     numberOfDonuts = parseInt(numberOfDonuts) + 1;
     document.getElementById("number-of-donuts").innerText = numberOfDonuts;
@@ -60,5 +65,5 @@ setInterval(function () {
         document.getElementById("buy-auto-clicker").style.display = 'flex';
     }
 
-    document.getElementById("auto-clicker-cost").innerText = parseInt(autoClickerCost) + " Donuts";
+    document.getElementById("auto-clicker-cost").innerText = parseInt(autoClickerCost) + " donuts";
 }, 1)
